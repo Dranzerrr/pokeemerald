@@ -1030,7 +1030,7 @@ script LittlerootTown_EventScript_NewSign {
 }
 
 script LittlerootTown_EventScript_SetupRivalBattle {
-    if (!(flag(FLAG_UNUSED_0x020) || flag(FLAG_UNUSED_0x021) || flag(FLAG_UNUSED_0x022))) {
+    if (!(flag(STARTER_BALL_ONE) || flag(STARTER_BALL_TWO) || flag(STARTER_BALL_THREE))) {
         setflag(FLAG_UNUSED_0x023)
     }
     else {

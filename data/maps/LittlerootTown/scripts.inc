@@ -2055,7 +2055,7 @@ LittlerootTown_EventScript_NewSign::
 
 LittlerootTown_EventScript_SetupRivalBattle::
 # 1033 "data/maps/LittlerootTown/scripts.pory"
-	goto_if_unset FLAG_UNUSED_0x020, LittlerootTown_EventScript_SetupRivalBattle_3
+	goto_if_unset STARTER_BALL_ONE, LittlerootTown_EventScript_SetupRivalBattle_3
 LittlerootTown_EventScript_SetupRivalBattle_2:
 # 1037 "data/maps/LittlerootTown/scripts.pory"
 	clearflag FLAG_UNUSED_0x023
@@ -2068,12 +2068,12 @@ LittlerootTown_EventScript_SetupRivalBattle_1:
 
 LittlerootTown_EventScript_SetupRivalBattle_3:
 # 1033 "data/maps/LittlerootTown/scripts.pory"
-	goto_if_unset FLAG_UNUSED_0x021, LittlerootTown_EventScript_SetupRivalBattle_5
+	goto_if_unset STARTER_BALL_TWO, LittlerootTown_EventScript_SetupRivalBattle_5
 	goto LittlerootTown_EventScript_SetupRivalBattle_2
 
 LittlerootTown_EventScript_SetupRivalBattle_5:
 # 1033 "data/maps/LittlerootTown/scripts.pory"
-	goto_if_unset FLAG_UNUSED_0x022, LittlerootTown_EventScript_SetupRivalBattle_1
+	goto_if_unset STARTER_BALL_THREE, LittlerootTown_EventScript_SetupRivalBattle_1
 	goto LittlerootTown_EventScript_SetupRivalBattle_2
 
 
