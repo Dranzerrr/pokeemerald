@@ -45,7 +45,7 @@
 #define STARTER_BALL_ONE     0x20 // Unused Flag
 #define STARTER_BALL_TWO     0x21 // Unused Flag
 #define STARTER_BALL_THREE   0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
+#define RIVAL_STARTER_BATTLE    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag

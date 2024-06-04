@@ -1031,19 +1031,39 @@ script LittlerootTown_EventScript_NewSign {
 
 script LittlerootTown_EventScript_SetupRivalBattle {
     if (!(flag(STARTER_BALL_ONE) || flag(STARTER_BALL_TWO) || flag(STARTER_BALL_THREE))) {
-        setflag(FLAG_UNUSED_0x023)
+        setflag(RIVAL_STARTER_BATTLE)
+		setvar(LITTLEROOT_STATE, 0)
     }
     else {
-        clearflag(FLAG_UNUSED_0x023)
+        if (var(LITTLEROOT_STATE) == 0)
+		{
+			clearflag(RIVAL_STARTER_BATTLE)
+		}
     }
 }
 
 script LittlerootTown_EventScript_MayRivalBattle {
-    trainerbattle_single(TRAINER_MAY_ROUTE_103_TORCHIC, May_Intro, May_Outro)
-    msgbox(PostBattle_May, MSGBOX_AUTOCLOSE)
-    waitmessage
+    trainerbattle_single(TRAINER_MAY_ROUTE_103_TORCHIC, May_Intro, May_Outro, RivalBattleOver)
     end
 }
+
+script RivalBattleOver
+{
+	lockall
+	applymovement(9, MayLeave)
+	waitmovement(0)
+	removeobject(9)
+	setflag(RIVAL_STARTER_BATTLE)
+	setvar(LITTLEROOT_STATE, 1)
+	releaseall
+}
+
+movement MayLeave
+{
+	face_down
+	walk_down
+	walk_left * 7
+} 
 
 text May_Intro {
     "You'll never win!"
