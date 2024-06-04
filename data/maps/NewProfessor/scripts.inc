@@ -257,377 +257,378 @@ NewProfessor_EventScript_Mudkip::
 # 118 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NewProfessor_EventScript_Mudkip_1
-# 140 "data/maps/NewProfessor/scripts.pory"
-	hidemonpic
 # 141 "data/maps/NewProfessor/scripts.pory"
+	hidemonpic
+# 142 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_NotChosen
 	return
 
 NewProfessor_EventScript_Mudkip_1:
 # 119 "data/maps/NewProfessor/scripts.pory"
-	givemon SPECIES_MUDKIP, 50, ITEM_MASTER_BALL
+	setflag FLAG_SYS_POKEMON_GET
 # 120 "data/maps/NewProfessor/scripts.pory"
+	givemon SPECIES_MUDKIP, 50, ITEM_MASTER_BALL
+# 121 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq NewProfessor_EventScript_Mudkip_4
-# 127 "data/maps/NewProfessor/scripts.pory"
+# 128 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq NewProfessor_EventScript_Mudkip_5
-# 135 "data/maps/NewProfessor/scripts.pory"
-	hidemonpic
 # 136 "data/maps/NewProfessor/scripts.pory"
+	hidemonpic
+# 137 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Mudkip_Text_2
 	return
 
 NewProfessor_EventScript_Mudkip_4:
-# 121 "data/maps/NewProfessor/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 122 "data/maps/NewProfessor/scripts.pory"
-	msgbox NewProfessor_EventScript_Mudkip_Text_1
+	playfanfare MUS_OBTAIN_ITEM
 # 123 "data/maps/NewProfessor/scripts.pory"
-	removeobject 1
+	msgbox NewProfessor_EventScript_Mudkip_Text_1
 # 124 "data/maps/NewProfessor/scripts.pory"
-	setflag STARTER_BALL_ONE
+	removeobject 1
 # 125 "data/maps/NewProfessor/scripts.pory"
+	setflag STARTER_BALL_ONE
+# 126 "data/maps/NewProfessor/scripts.pory"
 	call NicknamePartyMon
 	return
 
 NewProfessor_EventScript_Mudkip_5:
-# 128 "data/maps/NewProfessor/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 129 "data/maps/NewProfessor/scripts.pory"
-	msgbox NewProfessor_EventScript_Mudkip_Text_1
+	playfanfare MUS_OBTAIN_ITEM
 # 130 "data/maps/NewProfessor/scripts.pory"
-	removeobject 1
+	msgbox NewProfessor_EventScript_Mudkip_Text_1
 # 131 "data/maps/NewProfessor/scripts.pory"
-	setflag STARTER_BALL_ONE
+	removeobject 1
 # 132 "data/maps/NewProfessor/scripts.pory"
+	setflag STARTER_BALL_ONE
+# 133 "data/maps/NewProfessor/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 NewProfessor_EventScript_Totodile::
-# 147 "data/maps/NewProfessor/scripts.pory"
-	showmonpic SPECIES_TOTODILE, 10, 3
 # 148 "data/maps/NewProfessor/scripts.pory"
-	msgbox NewProfessor_EventScript_Totodile_Text_0, MSGBOX_YESNO
+	showmonpic SPECIES_TOTODILE, 10, 3
 # 149 "data/maps/NewProfessor/scripts.pory"
+	msgbox NewProfessor_EventScript_Totodile_Text_0, MSGBOX_YESNO
+# 150 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NewProfessor_EventScript_Totodile_1
-# 171 "data/maps/NewProfessor/scripts.pory"
+# 173 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 172 "data/maps/NewProfessor/scripts.pory"
+# 174 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_NotChosen
 	return
 
 NewProfessor_EventScript_Totodile_1:
-# 150 "data/maps/NewProfessor/scripts.pory"
-	givemon SPECIES_TOTODILE, 50, ITEM_MASTER_BALL
 # 151 "data/maps/NewProfessor/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 152 "data/maps/NewProfessor/scripts.pory"
+	givemon SPECIES_TOTODILE, 50, ITEM_MASTER_BALL
+# 153 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq NewProfessor_EventScript_Totodile_4
-# 158 "data/maps/NewProfessor/scripts.pory"
+# 160 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq NewProfessor_EventScript_Totodile_5
-# 166 "data/maps/NewProfessor/scripts.pory"
+# 168 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 167 "data/maps/NewProfessor/scripts.pory"
+# 169 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Mudkip_Text_2
 	return
 
 NewProfessor_EventScript_Totodile_4:
-# 152 "data/maps/NewProfessor/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 153 "data/maps/NewProfessor/scripts.pory"
-	msgbox NewProfessor_EventScript_Totodile_Text_1
 # 154 "data/maps/NewProfessor/scripts.pory"
-	removeobject 1
+	playfanfare MUS_OBTAIN_ITEM
 # 155 "data/maps/NewProfessor/scripts.pory"
-	setflag STARTER_BALL_ONE
+	msgbox NewProfessor_EventScript_Totodile_Text_1
 # 156 "data/maps/NewProfessor/scripts.pory"
+	removeobject 1
+# 157 "data/maps/NewProfessor/scripts.pory"
+	setflag STARTER_BALL_ONE
+# 158 "data/maps/NewProfessor/scripts.pory"
 	call NicknamePartyMon
 	return
 
 NewProfessor_EventScript_Totodile_5:
-# 159 "data/maps/NewProfessor/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 160 "data/maps/NewProfessor/scripts.pory"
-	msgbox NewProfessor_EventScript_Totodile_Text_1
 # 161 "data/maps/NewProfessor/scripts.pory"
-	removeobject 1
+	playfanfare MUS_OBTAIN_ITEM
 # 162 "data/maps/NewProfessor/scripts.pory"
-	setflag STARTER_BALL_ONE
+	msgbox NewProfessor_EventScript_Totodile_Text_1
 # 163 "data/maps/NewProfessor/scripts.pory"
+	removeobject 1
+# 164 "data/maps/NewProfessor/scripts.pory"
+	setflag STARTER_BALL_ONE
+# 165 "data/maps/NewProfessor/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 NewProfessor_EventScript_Squirtle::
-# 178 "data/maps/NewProfessor/scripts.pory"
-	showmonpic SPECIES_SQUIRTLE, 10, 3
-# 179 "data/maps/NewProfessor/scripts.pory"
-	msgbox NewProfessor_EventScript_Squirtle_Text_0, MSGBOX_YESNO
 # 180 "data/maps/NewProfessor/scripts.pory"
+	showmonpic SPECIES_SQUIRTLE, 10, 3
+# 181 "data/maps/NewProfessor/scripts.pory"
+	msgbox NewProfessor_EventScript_Squirtle_Text_0, MSGBOX_YESNO
+# 182 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NewProfessor_EventScript_Squirtle_1
-# 202 "data/maps/NewProfessor/scripts.pory"
+# 205 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 203 "data/maps/NewProfessor/scripts.pory"
+# 206 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_NotChosen
 	return
 
 NewProfessor_EventScript_Squirtle_1:
-# 181 "data/maps/NewProfessor/scripts.pory"
+# 183 "data/maps/NewProfessor/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 184 "data/maps/NewProfessor/scripts.pory"
 	givemon SPECIES_SQUIRTLE, 50, ITEM_MASTER_BALL
-# 182 "data/maps/NewProfessor/scripts.pory"
+# 185 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq NewProfessor_EventScript_Squirtle_4
-# 189 "data/maps/NewProfessor/scripts.pory"
+# 192 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq NewProfessor_EventScript_Squirtle_5
-# 197 "data/maps/NewProfessor/scripts.pory"
+# 200 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 198 "data/maps/NewProfessor/scripts.pory"
+# 201 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Mudkip_Text_2
 	return
 
 NewProfessor_EventScript_Squirtle_4:
-# 183 "data/maps/NewProfessor/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 184 "data/maps/NewProfessor/scripts.pory"
-	msgbox NewProfessor_EventScript_Squirtle_Text_1
-# 185 "data/maps/NewProfessor/scripts.pory"
-	removeobject 1
 # 186 "data/maps/NewProfessor/scripts.pory"
-	setflag STARTER_BALL_ONE
+	playfanfare MUS_OBTAIN_ITEM
 # 187 "data/maps/NewProfessor/scripts.pory"
+	msgbox NewProfessor_EventScript_Squirtle_Text_1
+# 188 "data/maps/NewProfessor/scripts.pory"
+	removeobject 1
+# 189 "data/maps/NewProfessor/scripts.pory"
+	setflag STARTER_BALL_ONE
+# 190 "data/maps/NewProfessor/scripts.pory"
 	call NicknamePartyMon
 	return
 
 NewProfessor_EventScript_Squirtle_5:
-# 190 "data/maps/NewProfessor/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 191 "data/maps/NewProfessor/scripts.pory"
-	msgbox NewProfessor_EventScript_Squirtle_Text_1
-# 192 "data/maps/NewProfessor/scripts.pory"
-	removeobject 1
 # 193 "data/maps/NewProfessor/scripts.pory"
-	setflag STARTER_BALL_ONE
+	playfanfare MUS_OBTAIN_ITEM
 # 194 "data/maps/NewProfessor/scripts.pory"
+	msgbox NewProfessor_EventScript_Squirtle_Text_1
+# 195 "data/maps/NewProfessor/scripts.pory"
+	removeobject 1
+# 196 "data/maps/NewProfessor/scripts.pory"
+	setflag STARTER_BALL_ONE
+# 197 "data/maps/NewProfessor/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 NewProfessor_EventScript_Treecko::
-# 209 "data/maps/NewProfessor/scripts.pory"
+# 212 "data/maps/NewProfessor/scripts.pory"
 	showmonpic SPECIES_TREECKO, 10, 3
-# 210 "data/maps/NewProfessor/scripts.pory"
+# 213 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Treecko_Text_0, MSGBOX_YESNO
-# 211 "data/maps/NewProfessor/scripts.pory"
+# 214 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NewProfessor_EventScript_Treecko_1
-# 233 "data/maps/NewProfessor/scripts.pory"
+# 237 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 234 "data/maps/NewProfessor/scripts.pory"
+# 238 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_NotChosen
 	return
 
 NewProfessor_EventScript_Treecko_1:
-# 212 "data/maps/NewProfessor/scripts.pory"
+# 215 "data/maps/NewProfessor/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 216 "data/maps/NewProfessor/scripts.pory"
 	givemon SPECIES_TREECKO, 50, ITEM_MASTER_BALL
-# 213 "data/maps/NewProfessor/scripts.pory"
+# 217 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq NewProfessor_EventScript_Treecko_4
-# 220 "data/maps/NewProfessor/scripts.pory"
+# 224 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq NewProfessor_EventScript_Treecko_5
-# 228 "data/maps/NewProfessor/scripts.pory"
+# 232 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 229 "data/maps/NewProfessor/scripts.pory"
+# 233 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Mudkip_Text_2
 	return
 
 NewProfessor_EventScript_Treecko_4:
-# 214 "data/maps/NewProfessor/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 215 "data/maps/NewProfessor/scripts.pory"
-	msgbox NewProfessor_EventScript_Treecko_Text_1
-# 216 "data/maps/NewProfessor/scripts.pory"
-	removeobject 2
-# 217 "data/maps/NewProfessor/scripts.pory"
-	setflag STARTER_BALL_TWO
 # 218 "data/maps/NewProfessor/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 219 "data/maps/NewProfessor/scripts.pory"
+	msgbox NewProfessor_EventScript_Treecko_Text_1
+# 220 "data/maps/NewProfessor/scripts.pory"
+	removeobject 2
+# 221 "data/maps/NewProfessor/scripts.pory"
+	setflag STARTER_BALL_TWO
+# 222 "data/maps/NewProfessor/scripts.pory"
 	call NicknamePartyMon
 	return
 
 NewProfessor_EventScript_Treecko_5:
-# 221 "data/maps/NewProfessor/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 222 "data/maps/NewProfessor/scripts.pory"
-	msgbox NewProfessor_EventScript_Treecko_Text_1
-# 223 "data/maps/NewProfessor/scripts.pory"
-	removeobject 2
-# 224 "data/maps/NewProfessor/scripts.pory"
-	setflag STARTER_BALL_TWO
 # 225 "data/maps/NewProfessor/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 226 "data/maps/NewProfessor/scripts.pory"
+	msgbox NewProfessor_EventScript_Treecko_Text_1
+# 227 "data/maps/NewProfessor/scripts.pory"
+	removeobject 2
+# 228 "data/maps/NewProfessor/scripts.pory"
+	setflag STARTER_BALL_TWO
+# 229 "data/maps/NewProfessor/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 NewProfessor_EventScript_Chikorita::
-# 240 "data/maps/NewProfessor/scripts.pory"
+# 244 "data/maps/NewProfessor/scripts.pory"
 	showmonpic SPECIES_CHIKORITA, 10, 3
-# 241 "data/maps/NewProfessor/scripts.pory"
+# 245 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Chikorita_Text_0, MSGBOX_YESNO
-# 242 "data/maps/NewProfessor/scripts.pory"
+# 246 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NewProfessor_EventScript_Chikorita_1
-# 264 "data/maps/NewProfessor/scripts.pory"
+# 269 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 265 "data/maps/NewProfessor/scripts.pory"
+# 270 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_NotChosen
 	return
 
 NewProfessor_EventScript_Chikorita_1:
-# 243 "data/maps/NewProfessor/scripts.pory"
+# 247 "data/maps/NewProfessor/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 248 "data/maps/NewProfessor/scripts.pory"
 	givemon SPECIES_CHIKORITA, 50, ITEM_MASTER_BALL
-# 244 "data/maps/NewProfessor/scripts.pory"
+# 249 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq NewProfessor_EventScript_Chikorita_4
-# 251 "data/maps/NewProfessor/scripts.pory"
+# 256 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq NewProfessor_EventScript_Chikorita_5
-# 259 "data/maps/NewProfessor/scripts.pory"
+# 264 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 260 "data/maps/NewProfessor/scripts.pory"
+# 265 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Mudkip_Text_2
 	return
 
 NewProfessor_EventScript_Chikorita_4:
-# 245 "data/maps/NewProfessor/scripts.pory"
+# 250 "data/maps/NewProfessor/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 246 "data/maps/NewProfessor/scripts.pory"
+# 251 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Chikorita_Text_1
-# 247 "data/maps/NewProfessor/scripts.pory"
+# 252 "data/maps/NewProfessor/scripts.pory"
 	removeobject 2
-# 248 "data/maps/NewProfessor/scripts.pory"
+# 253 "data/maps/NewProfessor/scripts.pory"
 	setflag STARTER_BALL_TWO
-# 249 "data/maps/NewProfessor/scripts.pory"
+# 254 "data/maps/NewProfessor/scripts.pory"
 	call NicknamePartyMon
 	return
 
 NewProfessor_EventScript_Chikorita_5:
-# 252 "data/maps/NewProfessor/scripts.pory"
+# 257 "data/maps/NewProfessor/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 253 "data/maps/NewProfessor/scripts.pory"
+# 258 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Chikorita_Text_1
-# 254 "data/maps/NewProfessor/scripts.pory"
+# 259 "data/maps/NewProfessor/scripts.pory"
 	removeobject 2
-# 255 "data/maps/NewProfessor/scripts.pory"
+# 260 "data/maps/NewProfessor/scripts.pory"
 	setflag STARTER_BALL_TWO
-# 256 "data/maps/NewProfessor/scripts.pory"
+# 261 "data/maps/NewProfessor/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 NewProfessor_EventScript_Bulbasaur::
-# 271 "data/maps/NewProfessor/scripts.pory"
+# 276 "data/maps/NewProfessor/scripts.pory"
 	showmonpic SPECIES_BULBASAUR, 10, 3
-# 272 "data/maps/NewProfessor/scripts.pory"
+# 277 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Bulbasaur_Text_0, MSGBOX_YESNO
-# 273 "data/maps/NewProfessor/scripts.pory"
+# 278 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NewProfessor_EventScript_Bulbasaur_1
-# 295 "data/maps/NewProfessor/scripts.pory"
+# 301 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 296 "data/maps/NewProfessor/scripts.pory"
+# 302 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_NotChosen
 	return
 
 NewProfessor_EventScript_Bulbasaur_1:
-# 274 "data/maps/NewProfessor/scripts.pory"
+# 279 "data/maps/NewProfessor/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 280 "data/maps/NewProfessor/scripts.pory"
 	givemon SPECIES_BULBASAUR, 50, ITEM_MASTER_BALL
-# 275 "data/maps/NewProfessor/scripts.pory"
+# 281 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq NewProfessor_EventScript_Bulbasaur_4
-# 282 "data/maps/NewProfessor/scripts.pory"
+# 288 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq NewProfessor_EventScript_Bulbasaur_5
-# 290 "data/maps/NewProfessor/scripts.pory"
+# 296 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 291 "data/maps/NewProfessor/scripts.pory"
+# 297 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Mudkip_Text_2
 	return
 
 NewProfessor_EventScript_Bulbasaur_4:
-# 276 "data/maps/NewProfessor/scripts.pory"
+# 282 "data/maps/NewProfessor/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 277 "data/maps/NewProfessor/scripts.pory"
+# 283 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Bulbasaur_Text_1
-# 278 "data/maps/NewProfessor/scripts.pory"
+# 284 "data/maps/NewProfessor/scripts.pory"
 	removeobject 2
-# 279 "data/maps/NewProfessor/scripts.pory"
+# 285 "data/maps/NewProfessor/scripts.pory"
 	setflag STARTER_BALL_TWO
-# 280 "data/maps/NewProfessor/scripts.pory"
+# 286 "data/maps/NewProfessor/scripts.pory"
 	call NicknamePartyMon
 	return
 
 NewProfessor_EventScript_Bulbasaur_5:
-# 283 "data/maps/NewProfessor/scripts.pory"
+# 289 "data/maps/NewProfessor/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 284 "data/maps/NewProfessor/scripts.pory"
+# 290 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Bulbasaur_Text_1
-# 285 "data/maps/NewProfessor/scripts.pory"
+# 291 "data/maps/NewProfessor/scripts.pory"
 	removeobject 2
-# 286 "data/maps/NewProfessor/scripts.pory"
+# 292 "data/maps/NewProfessor/scripts.pory"
 	setflag STARTER_BALL_TWO
-# 287 "data/maps/NewProfessor/scripts.pory"
+# 293 "data/maps/NewProfessor/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 NewProfessor_EventScript_Torchic::
-# 302 "data/maps/NewProfessor/scripts.pory"
+# 308 "data/maps/NewProfessor/scripts.pory"
 	showmonpic SPECIES_TORCHIC, 10, 3
-# 303 "data/maps/NewProfessor/scripts.pory"
+# 309 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Torchic_Text_0, MSGBOX_YESNO
-# 304 "data/maps/NewProfessor/scripts.pory"
+# 310 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NewProfessor_EventScript_Torchic_1
-# 326 "data/maps/NewProfessor/scripts.pory"
+# 333 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 327 "data/maps/NewProfessor/scripts.pory"
+# 334 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_NotChosen
 	return
 
 NewProfessor_EventScript_Torchic_1:
-# 305 "data/maps/NewProfessor/scripts.pory"
+# 311 "data/maps/NewProfessor/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 312 "data/maps/NewProfessor/scripts.pory"
 	givemon SPECIES_TORCHIC, 50, ITEM_MASTER_BALL
-# 306 "data/maps/NewProfessor/scripts.pory"
+# 313 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq NewProfessor_EventScript_Torchic_4
-# 313 "data/maps/NewProfessor/scripts.pory"
+# 320 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq NewProfessor_EventScript_Torchic_5
-# 321 "data/maps/NewProfessor/scripts.pory"
+# 328 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 322 "data/maps/NewProfessor/scripts.pory"
+# 329 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Mudkip_Text_2
 	return
 
 NewProfessor_EventScript_Torchic_4:
-# 307 "data/maps/NewProfessor/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 308 "data/maps/NewProfessor/scripts.pory"
-	msgbox NewProfessor_EventScript_Torchic_Text_1
-# 309 "data/maps/NewProfessor/scripts.pory"
-	removeobject 3
-# 310 "data/maps/NewProfessor/scripts.pory"
-	setflag STARTER_BALL_THREE
-# 311 "data/maps/NewProfessor/scripts.pory"
-	call NicknamePartyMon
-	return
-
-NewProfessor_EventScript_Torchic_5:
 # 314 "data/maps/NewProfessor/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 315 "data/maps/NewProfessor/scripts.pory"
@@ -637,155 +638,172 @@ NewProfessor_EventScript_Torchic_5:
 # 317 "data/maps/NewProfessor/scripts.pory"
 	setflag STARTER_BALL_THREE
 # 318 "data/maps/NewProfessor/scripts.pory"
+	call NicknamePartyMon
+	return
+
+NewProfessor_EventScript_Torchic_5:
+# 321 "data/maps/NewProfessor/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 322 "data/maps/NewProfessor/scripts.pory"
+	msgbox NewProfessor_EventScript_Torchic_Text_1
+# 323 "data/maps/NewProfessor/scripts.pory"
+	removeobject 3
+# 324 "data/maps/NewProfessor/scripts.pory"
+	setflag STARTER_BALL_THREE
+# 325 "data/maps/NewProfessor/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 NewProfessor_EventScript_Cyndaquil::
-# 333 "data/maps/NewProfessor/scripts.pory"
+# 340 "data/maps/NewProfessor/scripts.pory"
 	showmonpic SPECIES_CYNDAQUIL, 10, 3
-# 334 "data/maps/NewProfessor/scripts.pory"
+# 341 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Cyndaquil_Text_0, MSGBOX_YESNO
-# 335 "data/maps/NewProfessor/scripts.pory"
+# 342 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NewProfessor_EventScript_Cyndaquil_1
-# 357 "data/maps/NewProfessor/scripts.pory"
+# 365 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 358 "data/maps/NewProfessor/scripts.pory"
+# 366 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_NotChosen
 	return
 
 NewProfessor_EventScript_Cyndaquil_1:
-# 336 "data/maps/NewProfessor/scripts.pory"
+# 343 "data/maps/NewProfessor/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 344 "data/maps/NewProfessor/scripts.pory"
 	givemon SPECIES_CYNDAQUIL, 50, ITEM_MASTER_BALL
-# 337 "data/maps/NewProfessor/scripts.pory"
+# 345 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq NewProfessor_EventScript_Cyndaquil_4
-# 344 "data/maps/NewProfessor/scripts.pory"
+# 352 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq NewProfessor_EventScript_Cyndaquil_5
-# 352 "data/maps/NewProfessor/scripts.pory"
+# 360 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 353 "data/maps/NewProfessor/scripts.pory"
+# 361 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Mudkip_Text_2
 	return
 
 NewProfessor_EventScript_Cyndaquil_4:
-# 338 "data/maps/NewProfessor/scripts.pory"
+# 346 "data/maps/NewProfessor/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 339 "data/maps/NewProfessor/scripts.pory"
+# 347 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Cyndaquil_Text_1
-# 340 "data/maps/NewProfessor/scripts.pory"
+# 348 "data/maps/NewProfessor/scripts.pory"
 	removeobject 3
-# 341 "data/maps/NewProfessor/scripts.pory"
+# 349 "data/maps/NewProfessor/scripts.pory"
 	setflag STARTER_BALL_THREE
-# 342 "data/maps/NewProfessor/scripts.pory"
+# 350 "data/maps/NewProfessor/scripts.pory"
 	call NicknamePartyMon
 	return
 
 NewProfessor_EventScript_Cyndaquil_5:
-# 345 "data/maps/NewProfessor/scripts.pory"
+# 353 "data/maps/NewProfessor/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 346 "data/maps/NewProfessor/scripts.pory"
+# 354 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Cyndaquil_Text_1
-# 347 "data/maps/NewProfessor/scripts.pory"
+# 355 "data/maps/NewProfessor/scripts.pory"
 	removeobject 3
-# 348 "data/maps/NewProfessor/scripts.pory"
+# 356 "data/maps/NewProfessor/scripts.pory"
 	setflag STARTER_BALL_THREE
-# 349 "data/maps/NewProfessor/scripts.pory"
+# 357 "data/maps/NewProfessor/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 NewProfessor_EventScript_Charmander::
-# 364 "data/maps/NewProfessor/scripts.pory"
+# 372 "data/maps/NewProfessor/scripts.pory"
 	showmonpic SPECIES_CHARMANDER, 10, 3
-# 365 "data/maps/NewProfessor/scripts.pory"
+# 373 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Charmander_Text_0, MSGBOX_YESNO
-# 366 "data/maps/NewProfessor/scripts.pory"
+# 374 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NewProfessor_EventScript_Charmander_1
-# 388 "data/maps/NewProfessor/scripts.pory"
+# 397 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 389 "data/maps/NewProfessor/scripts.pory"
+# 398 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_NotChosen
 	return
 
 NewProfessor_EventScript_Charmander_1:
-# 367 "data/maps/NewProfessor/scripts.pory"
+# 375 "data/maps/NewProfessor/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 376 "data/maps/NewProfessor/scripts.pory"
 	givemon SPECIES_CHARMANDER, 50, ITEM_MASTER_BALL
-# 368 "data/maps/NewProfessor/scripts.pory"
+# 377 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq NewProfessor_EventScript_Charmander_4
-# 375 "data/maps/NewProfessor/scripts.pory"
+# 384 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq NewProfessor_EventScript_Charmander_5
-# 383 "data/maps/NewProfessor/scripts.pory"
+# 392 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 384 "data/maps/NewProfessor/scripts.pory"
+# 393 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Mudkip_Text_2
 	return
 
 NewProfessor_EventScript_Charmander_4:
-# 369 "data/maps/NewProfessor/scripts.pory"
+# 378 "data/maps/NewProfessor/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 370 "data/maps/NewProfessor/scripts.pory"
+# 379 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Charmander_Text_1
-# 371 "data/maps/NewProfessor/scripts.pory"
+# 380 "data/maps/NewProfessor/scripts.pory"
 	removeobject 3
-# 372 "data/maps/NewProfessor/scripts.pory"
+# 381 "data/maps/NewProfessor/scripts.pory"
 	setflag STARTER_BALL_THREE
-# 373 "data/maps/NewProfessor/scripts.pory"
+# 382 "data/maps/NewProfessor/scripts.pory"
 	call NicknamePartyMon
 	return
 
 NewProfessor_EventScript_Charmander_5:
-# 376 "data/maps/NewProfessor/scripts.pory"
+# 385 "data/maps/NewProfessor/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 377 "data/maps/NewProfessor/scripts.pory"
+# 386 "data/maps/NewProfessor/scripts.pory"
 	msgbox NewProfessor_EventScript_Charmander_Text_1
-# 378 "data/maps/NewProfessor/scripts.pory"
+# 387 "data/maps/NewProfessor/scripts.pory"
 	removeobject 3
-# 379 "data/maps/NewProfessor/scripts.pory"
+# 388 "data/maps/NewProfessor/scripts.pory"
 	setflag STARTER_BALL_THREE
-# 380 "data/maps/NewProfessor/scripts.pory"
+# 389 "data/maps/NewProfessor/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 NicknamePartyMon::
-# 396 "data/maps/NewProfessor/scripts.pory"
+# 405 "data/maps/NewProfessor/scripts.pory"
 	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-# 397 "data/maps/NewProfessor/scripts.pory"
+# 406 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 398 "data/maps/NewProfessor/scripts.pory"
+# 407 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknamePartyMon_1
 	return
 
 NicknamePartyMon_1:
-# 399 "data/maps/NewProfessor/scripts.pory"
+# 408 "data/maps/NewProfessor/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 400 "data/maps/NewProfessor/scripts.pory"
+# 409 "data/maps/NewProfessor/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	return
 
 
 NicknameBoxMon::
-# 407 "data/maps/NewProfessor/scripts.pory"
+# 416 "data/maps/NewProfessor/scripts.pory"
 	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-# 408 "data/maps/NewProfessor/scripts.pory"
+# 417 "data/maps/NewProfessor/scripts.pory"
 	hidemonpic
-# 409 "data/maps/NewProfessor/scripts.pory"
+# 418 "data/maps/NewProfessor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknameBoxMon_2
 NicknameBoxMon_1:
-# 412 "data/maps/NewProfessor/scripts.pory"
+# 421 "data/maps/NewProfessor/scripts.pory"
 	msgbox NicknameBoxMon_Text_0
 	return
 
 NicknameBoxMon_2:
-# 410 "data/maps/NewProfessor/scripts.pory"
+# 419 "data/maps/NewProfessor/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
 	goto NicknameBoxMon_1
 
@@ -811,85 +829,85 @@ NewProfessor_EventScript_Mudkip_Text_0:
 	.string "Do you want to choose Mudkip?$"
 
 NewProfessor_EventScript_Mudkip_Text_1:
-# 122 "data/maps/NewProfessor/scripts.pory"
+# 123 "data/maps/NewProfessor/scripts.pory"
 	.string "Recieved Mudkip$"
 
 NewProfessor_EventScript_Mudkip_Text_2:
-# 136 "data/maps/NewProfessor/scripts.pory"
+# 137 "data/maps/NewProfessor/scripts.pory"
 	.string "No More Room$"
 
 NewProfessor_EventScript_Totodile_Text_0:
-# 148 "data/maps/NewProfessor/scripts.pory"
+# 149 "data/maps/NewProfessor/scripts.pory"
 	.string "Do you want to choose Totodile?$"
 
 NewProfessor_EventScript_Totodile_Text_1:
-# 153 "data/maps/NewProfessor/scripts.pory"
+# 155 "data/maps/NewProfessor/scripts.pory"
 	.string "Recieved Totodile$"
 
 NewProfessor_EventScript_Squirtle_Text_0:
-# 179 "data/maps/NewProfessor/scripts.pory"
+# 181 "data/maps/NewProfessor/scripts.pory"
 	.string "Do you want to choose Squirtle?$"
 
 NewProfessor_EventScript_Squirtle_Text_1:
-# 184 "data/maps/NewProfessor/scripts.pory"
+# 187 "data/maps/NewProfessor/scripts.pory"
 	.string "Recieved Squirtle$"
 
 NewProfessor_EventScript_Treecko_Text_0:
-# 210 "data/maps/NewProfessor/scripts.pory"
+# 213 "data/maps/NewProfessor/scripts.pory"
 	.string "Do you want to choose Treecko?$"
 
 NewProfessor_EventScript_Treecko_Text_1:
-# 215 "data/maps/NewProfessor/scripts.pory"
+# 219 "data/maps/NewProfessor/scripts.pory"
 	.string "Recieved Treecko$"
 
 NewProfessor_EventScript_Chikorita_Text_0:
-# 241 "data/maps/NewProfessor/scripts.pory"
+# 245 "data/maps/NewProfessor/scripts.pory"
 	.string "Do you want to choose Chikorita?$"
 
 NewProfessor_EventScript_Chikorita_Text_1:
-# 246 "data/maps/NewProfessor/scripts.pory"
+# 251 "data/maps/NewProfessor/scripts.pory"
 	.string "Recieved Chikorita$"
 
 NewProfessor_EventScript_Bulbasaur_Text_0:
-# 272 "data/maps/NewProfessor/scripts.pory"
+# 277 "data/maps/NewProfessor/scripts.pory"
 	.string "Do you want to choose Bulbasaur?$"
 
 NewProfessor_EventScript_Bulbasaur_Text_1:
-# 277 "data/maps/NewProfessor/scripts.pory"
+# 283 "data/maps/NewProfessor/scripts.pory"
 	.string "Recieved Bulbasaur$"
 
 NewProfessor_EventScript_Torchic_Text_0:
-# 303 "data/maps/NewProfessor/scripts.pory"
+# 309 "data/maps/NewProfessor/scripts.pory"
 	.string "Do you want to choose Torchic?$"
 
 NewProfessor_EventScript_Torchic_Text_1:
-# 308 "data/maps/NewProfessor/scripts.pory"
+# 315 "data/maps/NewProfessor/scripts.pory"
 	.string "Recieved Torchic$"
 
 NewProfessor_EventScript_Cyndaquil_Text_0:
-# 334 "data/maps/NewProfessor/scripts.pory"
+# 341 "data/maps/NewProfessor/scripts.pory"
 	.string "Do you want to choose Cyndaquil?$"
 
 NewProfessor_EventScript_Cyndaquil_Text_1:
-# 339 "data/maps/NewProfessor/scripts.pory"
+# 347 "data/maps/NewProfessor/scripts.pory"
 	.string "Recieved Cyndaquil$"
 
 NewProfessor_EventScript_Charmander_Text_0:
-# 365 "data/maps/NewProfessor/scripts.pory"
+# 373 "data/maps/NewProfessor/scripts.pory"
 	.string "Do you want to choose Charmander?$"
 
 NewProfessor_EventScript_Charmander_Text_1:
-# 370 "data/maps/NewProfessor/scripts.pory"
+# 379 "data/maps/NewProfessor/scripts.pory"
 	.string "Recieved Charmander$"
 
 NicknamePartyMon_Text_0:
-# 396 "data/maps/NewProfessor/scripts.pory"
+# 405 "data/maps/NewProfessor/scripts.pory"
 	.string "Give a nickname?$"
 
 NicknameBoxMon_Text_0:
-# 412 "data/maps/NewProfessor/scripts.pory"
+# 421 "data/maps/NewProfessor/scripts.pory"
 	.string "Transferred to PC$"
 
 NewProfessor_NotChosen::
-# 415 "data/maps/NewProfessor/scripts.pory"
+# 424 "data/maps/NewProfessor/scripts.pory"
 	.string "You did not choose the Pokemon$"

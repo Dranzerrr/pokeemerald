@@ -116,6 +116,7 @@ script NewProfessor_EventScript_Mudkip {
     showmonpic(SPECIES_MUDKIP, 10,3)
     msgbox("Do you want to choose Mudkip?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
+        setflag(FLAG_SYS_POKEMON_GET)
         givemon(SPECIES_MUDKIP, 50, ITEM_MASTER_BALL)
         if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
             playfanfare(MUS_OBTAIN_ITEM)
@@ -147,6 +148,7 @@ script NewProfessor_EventScript_Totodile {
     showmonpic(SPECIES_TOTODILE, 10,3)
     msgbox("Do you want to choose Totodile?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
+        setflag(FLAG_SYS_POKEMON_GET)
         givemon(SPECIES_TOTODILE, 50, ITEM_MASTER_BALL)
         if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
             playfanfare(MUS_OBTAIN_ITEM)
@@ -178,6 +180,7 @@ script NewProfessor_EventScript_Squirtle {
     showmonpic(SPECIES_SQUIRTLE, 10,3)
     msgbox("Do you want to choose Squirtle?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
+        setflag(FLAG_SYS_POKEMON_GET)
         givemon(SPECIES_SQUIRTLE, 50, ITEM_MASTER_BALL)
         if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
             playfanfare(MUS_OBTAIN_ITEM)
@@ -209,6 +212,7 @@ script NewProfessor_EventScript_Treecko {
     showmonpic(SPECIES_TREECKO, 10,3)
     msgbox("Do you want to choose Treecko?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
+        setflag(FLAG_SYS_POKEMON_GET)
         givemon(SPECIES_TREECKO, 50, ITEM_MASTER_BALL)
         if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
             playfanfare(MUS_OBTAIN_ITEM)
@@ -240,6 +244,7 @@ script NewProfessor_EventScript_Chikorita {
     showmonpic(SPECIES_CHIKORITA, 10,3)
     msgbox("Do you want to choose Chikorita?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
+        setflag(FLAG_SYS_POKEMON_GET)
         givemon(SPECIES_CHIKORITA, 50, ITEM_MASTER_BALL)
         if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
             playfanfare(MUS_OBTAIN_ITEM)
@@ -271,6 +276,7 @@ script NewProfessor_EventScript_Bulbasaur {
     showmonpic(SPECIES_BULBASAUR, 10,3)
     msgbox("Do you want to choose Bulbasaur?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
+        setflag(FLAG_SYS_POKEMON_GET)
         givemon(SPECIES_BULBASAUR, 50, ITEM_MASTER_BALL)
         if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
             playfanfare(MUS_OBTAIN_ITEM)
@@ -302,6 +308,7 @@ script NewProfessor_EventScript_Torchic {
     showmonpic(SPECIES_TORCHIC, 10,3)
     msgbox("Do you want to choose Torchic?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
+        setflag(FLAG_SYS_POKEMON_GET)
         givemon(SPECIES_TORCHIC, 50, ITEM_MASTER_BALL)
         if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
             playfanfare(MUS_OBTAIN_ITEM)
@@ -333,6 +340,7 @@ script NewProfessor_EventScript_Cyndaquil {
     showmonpic(SPECIES_CYNDAQUIL, 10,3)
     msgbox("Do you want to choose Cyndaquil?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
+        setflag(FLAG_SYS_POKEMON_GET)
         givemon(SPECIES_CYNDAQUIL, 50, ITEM_MASTER_BALL)
         if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
             playfanfare(MUS_OBTAIN_ITEM)
@@ -364,6 +372,7 @@ script NewProfessor_EventScript_Charmander {
     showmonpic(SPECIES_CHARMANDER, 10,3)
     msgbox("Do you want to choose Charmander?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
+        setflag(FLAG_SYS_POKEMON_GET)
         givemon(SPECIES_CHARMANDER, 50, ITEM_MASTER_BALL)
         if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
             playfanfare(MUS_OBTAIN_ITEM)

@@ -1,0 +1,47 @@
+mapscripts Littleroot_Pokecenter_MapScripts
+{
+    MAP_SCRIPT_ON_TRANSITION: Littleroot_Pokecenter_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+    // CableClub_OnResume is needed the first time you go to a PokeCenter, otherwise
+    // the game will crash.
+}
+
+script Littleroot_Pokecenter_OnTransition
+{
+    setrespawn(HEAL_LOCATION_LITTLEROOT_TOWN)
+    // This constant needs to be created in 2x heal.locations.h
+    // include\constants\
+    // src\data\
+    end
+}
+
+script Littleroot_Pokecenter_Employee_Simple
+{
+    setvar(VAR_0x800B, 2) // This needs to match the ID of the Nurse, otherwise the game will freeze
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script Littleroot_Pokecenter_Employee
+{
+    lock
+    faceplayer
+    msgbox("Would you like me to heal your party?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES)
+    {
+        incrementgamestat(GAME_STAT_USED_POKECENTER)
+
+        special(HealPlayerParty)
+        msgbox("Come again soon.")
+        waitmessage
+        release
+        end
+    }
+    else
+    {
+        msgbox("Have a nice day.", MSGBOX_NPC)
+    }
+}
